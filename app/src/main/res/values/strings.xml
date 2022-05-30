@@ -3,5 +3,6 @@
     <string name="iniciar_sesion">INICIAR SESION</string>
     <string name="registrarse">REGISTRARSE</string>
     <string name="recovery_password">RECUPERAR CONTRASEÑA</string>
+    <string name="back">VOLVER</string>
     <string name="logo">logo</string>
 </resources>
