@@ -31,6 +31,15 @@
                 android:layout_marginBottom="16pt"
                 app:srcCompat="@drawable/logo" />
 
+            <TextView
+                android:id="@+id/activity_register_tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16pt"
+                android:text="FORMULARIO DE REGISTRO"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/activity_register_til_email"
                 android:layout_width="match_parent"
