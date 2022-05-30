@@ -12,15 +12,15 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val tvToRecoveryPassword = findViewById<TextView>(R.id.activity_login_tv_recovery_password)
-
         tvToRecoveryPassword.setOnClickListener {
+            //Cambio a la ActivityRecoveryPassword
             val intent = Intent(this, ActivityRecoveryPassword::class.java)
             startActivity(intent)
         }
 
         val btnRegister = findViewById<Button>(R.id.activity_login_btn_register)
         btnRegister.setOnClickListener {
-            //Me lleva a la ActivityRegister
+            //Cambio a la ActivityRegister
             val intent = Intent(this, ActivityRegister::class.java)
             startActivity(intent)
         }
