@@ -3,6 +3,7 @@ package com.example.taskapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
@@ -14,6 +15,13 @@ class MainActivity : AppCompatActivity() {
 
         tvToRecoveryPassword.setOnClickListener {
             val intent = Intent(this, ActivityRecoveryPassword::class.java)
+            startActivity(intent)
+        }
+
+        val btnRegister = findViewById<Button>(R.id.activity_login_btn_register)
+        btnRegister.setOnClickListener {
+            //Me lleva a la ActivityRegister
+            val intent = Intent(this, ActivityRegister::class.java)
             startActivity(intent)
         }
     }
