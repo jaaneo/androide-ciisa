@@ -34,7 +34,7 @@
                 app:srcCompat="@drawable/logo" />
 
             <Button
-                android:id="@+id/activity_login_btn_login"
+                android:id="@+id/activity_main_btn_login"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/red_primary"
