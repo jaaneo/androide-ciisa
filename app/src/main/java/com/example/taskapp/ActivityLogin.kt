@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Patterns
 import android.widget.Button
 import android.widget.Toast
+import com.example.taskapp.utils.TilValidator
 import com.google.android.material.textfield.TextInputLayout
 
 class ActivityLogin : AppCompatActivity() {
@@ -19,15 +20,12 @@ class ActivityLogin : AppCompatActivity() {
         btnLogin.setOnClickListener {
             val email = tilEmail.editText?.text
             val password = tilPassword.editText?.text
-          //  Toast.makeText(this, "The email: $email, the Password: $password", Toast.LENGTH_LONG).show()
+            val emailValid = TilValidator(tilEmail)
+                .required()
+                .isEmail()
+                .isValid()
 
-            if (email.isNullOrEmpty() || !Patterns.EMAIL_ADDRESS.matcher(email).matches() ){
-                tilEmail.error = "El dato es inválido"
-            } else{
-                tilEmail.error = null
-                tilEmail.isErrorEnabled = false
-            }
+            Toast.makeText(this, emailValid.toString(), Toast.LENGTH_LONG).show()
         }
-
     }
 }
